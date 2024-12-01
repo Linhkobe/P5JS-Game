@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    <title>Drone Escape Simulator</title>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+    <div id = "controls">
+        <div class = "slider-container">
+            <label for = "speedSlider">
+                Vitesse de drone:
+            </label>
+            <input type = "range" id = "speedSlider" min = "1" max = "10" value = "5">
+        </div>
+    
+        <div class = "slider-container">
+            <label for="sizeSlider">
+                Taille de drone: 
+            </label>
+            <input type = "range" id = "sizeSlider" min = "50" max = "100" value = "20">
+        </div>
+
+        <div id = "collisonContainer">
+            <p id = "collisonLabel">Collisons: 0</p>
+        </div>
+    </div>
+    <script src = "js/gold.js"></script>
+    <script src = "js/obstacle.js"></script>
+    <script src = "js/Drone.js"></script>
+    <script src = "js/sketch.js"></script>
+    <script src = "js/path.js"></script>
+</body>
+</html>
